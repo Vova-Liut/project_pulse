@@ -4,6 +4,9 @@
 
 
 @media (max-width: 991px){ 
+    .header {
+        margin: auto 15px auto 15px;
+    }
     .promo {
         &__wrapper {
             align-items: center;
@@ -54,6 +57,9 @@
             height: 40px;
             font-size: 12px;
         }
+        &_submit {
+            width: 100%;
+        }
     }
     .promo {
         &__header {
@@ -96,6 +102,9 @@
             width: 200px;
             height: 40px;
             font-size: 10px;
+        }
+        &_submit {
+            width: 100%;
         }
     }
     .promo {
@@ -147,11 +156,6 @@
         input {
             height: 35px;
             font-size: 10px;
-        }
-    }
-    .button {
-        &_submit {
-            width: 100%;
         }
     }
 }
