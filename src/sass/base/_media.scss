@@ -24,8 +24,27 @@
     }
     .feed-form {
         margin: 36px auto;
+    }
+    .carousel {
+        &__inner{
+            img {
+                
+            }
         }
-    
+    .slick-prev {
+       left: -25px;
+       z-index: 1;
+        }
+    .slick-next {
+        right: -20px;
+        z-index: 0;
+    }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+        }
+    }  
 }
 
 @media (max-width: 767px) {
@@ -78,6 +97,19 @@
             a {
                 font-size: 14px;
             }
+        }
+    }
+    .carousel {
+        &__inner {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+
         }
     }
 }
@@ -158,4 +190,22 @@
             font-size: 10px;
         }
     }
+    .carousel {
+        &__inner {
+            img {
+                width: 40%;
+            }
+        }
+    }
+    .catalog {
+        h2 {
+            font-size: 20px;
+        }
+        &__tab {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+
+    }
+
 }
