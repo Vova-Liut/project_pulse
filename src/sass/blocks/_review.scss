@@ -1,6 +1,6 @@
 .review {
     max-height: 1100px;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
     &__wrapper {
         margin: 30px  auto;
         display: flex;
@@ -11,11 +11,9 @@
         height: 272px;
         display: flex;
         justify-content: space-between;
-
-
     }
     &__text {
-        width: 655px;
+        max-width: 655px;
         margin-left: 60px;
         margin-right: 50px;
     }
@@ -38,6 +36,9 @@
         line-height: 1.2;
         font-weight: 300;
         color: #0d0d0d;
+    }
+    &__descr-767 {
+        display: none;
     }
     &__photo-circle {
         width: 169px;
