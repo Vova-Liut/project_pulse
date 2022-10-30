@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
         adaptiveHeight: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left_arr.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/right_arr.svg"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icon/arr/left_arr.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icon/arr/right_arr.svg"></button>',
         responsive: [
             {
                 breakpoint: 768,
@@ -48,4 +48,41 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn(500);
         });
     });
+
+    //Validation
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                  },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя!",
+                    minlength: jQuery.validator.format("Введите минимум {0} символа!")
+                  },
+                phone: "Пожалуйста, введите свой номер телефона!",
+                email: {
+                required: "Пожалуйста, введите свою почту!",
+                email: "Неправильно введен адрес почты!"
+                }
+            }
+        });
+    }
+
+    validateForms('#order form');
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+
+    //MaskedInput
+
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });
