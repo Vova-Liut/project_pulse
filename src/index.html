@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
                     <img src="icon/running_man_1stscreen.png" alt="logo">
                 </a>
-                <div class="header__official">
+                <div class="header__official animate__animated animate__fadeInUp">
                     Официальный представитель
                     <span>Garmin, Polar, Suunto</span>
                 </div>
@@ -67,7 +68,7 @@
                 <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
             </header>
             <div class="advantages__wrapper">
-                <div class="advantages__item">
+                <div class="advantages__item  animate__animated wow  animate__fadeInUp" data-wow-duration="3s">
                     <img src="icon/cup_2nd_screen.png" alt="cup">
                     <div class="advantages__subtitle">Делимся опытом</div>
                     <div class="advantages__descr">Наши сотрудники всегда готовы поделиться своим опытом, 
@@ -75,13 +76,13 @@
                         готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icon/heart_2nd_screen.png" alt="heart">
+                    <img src="icon/heart_2nd_screen.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">Заботимся о здоровье</div>
                     <div class="advantages__descr">Мы работаем для того, 
                         чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в 
                         радость Вам и Вашим близким!</div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item  animate__animated wow  animate__fadeInDown" data-wow-duration="3s">
                     <img src="icon/shoe_2nd_screen.png" alt="shoe">
                     <div class="advantages__subtitle">Учим бегать</div>
                     <div class="advantages__descr">Помогаем с обучением 
@@ -416,14 +417,14 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
                 <div class="review__wrapper">
-                    <div class="review__block">
+                    <div class="review__block animate__animated wow  animate__fadeInUp">
                         <div class="review__photo-circle"><img src="icon/irina.png" alt="photo" class="photo"></div>
                             <div class="review__text">
                                 <div class="review__name">Ирина Иванченко</div>
                                 <div class="review__subheader">
                                     2 полумарафона
                                 </div>
-                                <div class="review__descr">
+                                <div class="review__descr animate__animated wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
                                     Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали <br> пульсометр, который подошёл именно под мои цели и финансовые возможности. <br>
                                     Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
                                     <p></p>
@@ -438,7 +439,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="review__block">
+                    <div class="review__block animate__animated wow  animate__fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
                         <div class="review__photo-circle"><img src="icon/photos/ivan.png" alt="photo" class="photo"></div>
                             <div class="review__text">
                                 <div class="review__name">Иван Сёмочкин</div>
@@ -458,7 +459,7 @@
                                 </div>
                             </div>
                     </div>
-                    <div class="review__block">
+                    <div class="review__block  animate__animated wow  animate__fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
                         <div class="review__photo-circle"><img src="icon/photos/yulya.png" alt="photo" class="photo"></div>
                             <div class="review__text">
                                 <div class="review__name">Юлия Дашкина</div>
@@ -530,11 +531,17 @@
 
     </div>
 
+    <a href="#up" class="pageup"> 
+        <img src="icon/circle-chevron-up-solid.svg" alt="up">
+    </a>
+   
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
