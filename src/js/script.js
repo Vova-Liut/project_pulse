@@ -136,10 +136,11 @@ $(document).ready(function(){
           }, 800, function(){
     
             // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+          
           });
         } // End if
       });
       //WOW 
+
       new WOW().init();
-    });
+});
